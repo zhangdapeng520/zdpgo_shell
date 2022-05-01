@@ -45,7 +45,6 @@ func RunCommand(cmd string) string {
 }
 
 func runInLinuxWithErr(cmd string) (string, error) {
-	fmt.Println("Running Linux cmd:" + cmd)
 	result, err := exec.Command("/bin/sh", "-c", cmd).Output()
 	if err != nil {
 		fmt.Println(err.Error())
