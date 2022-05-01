@@ -1,9 +1,5 @@
 package zdpgo_shell
 
-import (
-	"runtime"
-)
-
 /*
 @Time : 2022/4/29 21:45
 @Author : 张大鹏
@@ -23,17 +19,6 @@ func New() *Shell {
 func NewWithConfig(config Config) *Shell {
 	s := Shell{}
 
-	// 配置
-	if config.ShellPath == "" {
-		switch runtime.GOOS {
-		case "linux":
-			config.ShellPath = "/bin/bash"
-		case "windows":
-			config.ShellPath = "C:\\Windows\\System32\\cmd.exe"
-		default:
-			config.ShellPath = "/bin/sh"
-		}
-	}
 	s.Config = &config
 	return &s
 }

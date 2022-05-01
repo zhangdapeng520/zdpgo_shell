@@ -9,5 +9,4 @@ package zdpgo_shell
 */
 
 type Config struct {
-	ShellPath string `json:"shell_path" yaml:"shell_path" env:"shell_path"`
 }

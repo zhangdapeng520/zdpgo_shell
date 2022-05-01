@@ -21,12 +21,12 @@ func TestShell_ExecShell(t *testing.T) {
 	s := getShell()
 	tables := []string{
 		"dir",
-		"ping 127.0.0.1",
+		"pwd",
 	}
 	for _, cmd := range tables {
 		result, err := s.RunWithError(cmd)
 		if err != nil {
-			panic(err)
+			fmt.Println(err)
 		}
 		fmt.Println(result)
 	}

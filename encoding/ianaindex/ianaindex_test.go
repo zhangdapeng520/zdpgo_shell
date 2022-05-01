@@ -10,8 +10,6 @@ import (
 	"github.com/zhangdapeng520/zdpgo_shell/encoding"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/charmap"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/internal/identifier"
-	"github.com/zhangdapeng520/zdpgo_shell/encoding/japanese"
-	"github.com/zhangdapeng520/zdpgo_shell/encoding/korean"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/simplifiedchinese"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/traditionalchinese"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/unicode"
@@ -20,8 +18,6 @@ import (
 var All = [][]encoding.Encoding{
 	unicode.All,
 	charmap.All,
-	japanese.All,
-	korean.All,
 	simplifiedchinese.All,
 	traditionalchinese.All,
 }

@@ -19,8 +19,6 @@ import (
 	"github.com/zhangdapeng520/zdpgo_shell/encoding"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/charmap"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/internal/identifier"
-	"github.com/zhangdapeng520/zdpgo_shell/encoding/japanese"
-	"github.com/zhangdapeng520/zdpgo_shell/encoding/korean"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/simplifiedchinese"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/traditionalchinese"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/unicode"
@@ -203,10 +201,6 @@ var encodings = [numIANA]encoding.Encoding{
 	enc2256: charmap.Windows1256,
 	enc2257: charmap.Windows1257,
 	enc2258: charmap.Windows1258,
-	enc18:   japanese.EUCJP,
-	enc39:   japanese.ISO2022JP,
-	enc17:   japanese.ShiftJIS,
-	enc38:   korean.EUCKR,
 	enc114:  simplifiedchinese.GB18030,
 	enc113:  simplifiedchinese.GBK,
 	enc2085: simplifiedchinese.HZGB2312,

@@ -8,8 +8,6 @@ import (
 	"github.com/zhangdapeng520/zdpgo_shell/encoding"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/charmap"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/internal/identifier"
-	"github.com/zhangdapeng520/zdpgo_shell/encoding/japanese"
-	"github.com/zhangdapeng520/zdpgo_shell/encoding/korean"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/simplifiedchinese"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/traditionalchinese"
 	"github.com/zhangdapeng520/zdpgo_shell/encoding/unicode"
@@ -94,10 +92,6 @@ var encodings = [numEncodings]encoding.Encoding{
 	gbk:               simplifiedchinese.GBK,
 	gb18030:           simplifiedchinese.GB18030,
 	big5:              traditionalchinese.Big5,
-	eucjp:             japanese.EUCJP,
-	iso2022jp:         japanese.ISO2022JP,
-	shiftJIS:          japanese.ShiftJIS,
-	euckr:             korean.EUCKR,
 	replacement:       encoding.Replacement,
 	utf16be:           unicode.UTF16(unicode.BigEndian, unicode.IgnoreBOM),
 	utf16le:           unicode.UTF16(unicode.LittleEndian, unicode.IgnoreBOM),
