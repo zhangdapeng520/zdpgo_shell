@@ -17,7 +17,6 @@ import (
 */
 
 func runInLinux(cmd string) string {
-	fmt.Println("Running Linux cmd:", cmd)
 	result, err := exec.Command("/bin/sh", "-c", cmd).Output()
 	if err != nil {
 		fmt.Println(err.Error())
@@ -26,7 +25,6 @@ func runInLinux(cmd string) string {
 }
 
 func runInWindows(cmd string) string {
-	fmt.Println("Running Win cmd:", cmd)
 	result, err := exec.Command("cmd", "/c", cmd).Output()
 	if err != nil {
 		fmt.Println(err.Error())
