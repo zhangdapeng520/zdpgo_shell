@@ -13,9 +13,9 @@ func main() {
 		"cd",
 	}
 	for _, cmd := range tables {
-		result, err := s.RunWithError(cmd)
-		if err != nil {
-			fmt.Println(err)
+		result := s.Run(cmd)
+		if result.Error != "" {
+			fmt.Println(result.Error)
 		}
 		fmt.Println(result)
 	}

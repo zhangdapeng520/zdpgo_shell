@@ -1,9 +1,4 @@
-// Copyright 2013 The Go Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style
-// license that can be found in the LICENSE file.
-
-// Package unicode provides Unicode encodings such as UTF-16.
-package unicode // import "github.com/zhangdapeng520/zdpgo_shell/encoding/unicode"
+package unicode
 
 import (
 	"bytes"

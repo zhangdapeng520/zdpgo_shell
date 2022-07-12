@@ -4,5 +4,5 @@ import "testing"
 
 func TestShell_Kill(t *testing.T) {
 	s := getShell()
-	s.Kill(3940)
+	s.Kill(14200)
 }

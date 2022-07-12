@@ -24,10 +24,7 @@ func TestShell_ExecShell(t *testing.T) {
 		"pwd",
 	}
 	for _, cmd := range tables {
-		result, err := s.RunWithError(cmd)
-		if err != nil {
-			fmt.Println(err)
-		}
+		result := s.Run(cmd)
 		fmt.Println(result)
 	}
 }
@@ -38,10 +35,7 @@ func TestShell_RunWithWait(t *testing.T) {
 		"ping 127.0.0.1",
 	}
 	for _, cmd := range tables {
-		result, err := s.RunWithError(cmd)
-		if err != nil {
-			panic(err)
-		}
+		result := s.Run(cmd)
 		fmt.Println(result)
 	}
 }

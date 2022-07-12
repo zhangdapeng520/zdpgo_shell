@@ -1,16 +1,4 @@
-// Copyright 2016 The Go Authors. All rights reserved.
-// Use of this source code is governed by a BSD-style
-// license that can be found in the LICENSE file.
-
-// Package utf32 provides the UTF-32 Unicode encoding.
-//
-// Please note that support for UTF-32 is discouraged as it is a rare and
-// inefficient encoding, unfit for use as an interchange format. For use
-// on the web, the W3C strongly discourages its use
-// (https://www.w3.org/TR/html5/document-metadata.html#charset)
-// while WHATWG directly prohibits supporting it
-// (https://html.spec.whatwg.org/multipage/syntax.html#character-encodings).
-package utf32 // import "github.com/zhangdapeng520/zdpgo_shell/encoding/unicode/utf32"
+package utf32
 
 import (
 	"errors"
