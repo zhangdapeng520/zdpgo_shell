@@ -1,11 +1,12 @@
 package zdpgo_shell
 
 import (
-	"github.com/zhangdapeng520/zdpgo_daemon"
 	"io/ioutil"
 	"log"
 	"os"
 	"strconv"
+
+	"github.com/zhangdapeng520/zdpgo_daemon"
 )
 
 /*
@@ -44,9 +45,9 @@ func (s *Shell) RunRealTime(command string) Result {
 }
 
 // RunBackground 开启新的进程执行
-func (s *Shell) RunBackground(executeFile string, args ...string) Result {
+func (s *Shell) RunBackground(executeFile string) Result {
 	// 启动一个子进程后主程序退出
-	zdpgo_daemon.Background("", false)
+	zdpgo_daemon.Background("", true)
 
 	// 写入进程ID
 	ioutil.WriteFile(".env", []byte(strconv.Itoa(os.Getpid())), os.ModePerm)
